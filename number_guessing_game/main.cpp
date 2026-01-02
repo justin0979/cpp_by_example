@@ -1,5 +1,5 @@
-#include <iostream>
 #include "game.h"
+#include <iostream>
 #include <functional>
 #include <string>
 #include <format>
