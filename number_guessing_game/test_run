@@ -1,0 +1,14 @@
+#!/bin/bash
+
+GLOBIGNORE='main.cpp'
+
+g++ --std=c++2a *.cpp -o game_tests
+
+FILE="game_tests"
+
+if [ -f "$FILE" ]; then
+  ./game_tests
+  rm game_tests
+fi
+
+unset GLOBIGNORE
