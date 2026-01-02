@@ -27,7 +27,7 @@ namespace game
         return;
       }
       std::cout << message(number, guess.value());
-      std::cout << '>';
+      std::cout << ".\nGuess again, or type any none number to quit: ";
     }
     std::cout << std::format("The number to guess is {}\n", number);
   }
