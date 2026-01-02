@@ -1,0 +1,9 @@
+#!/bin/bash
+
+g++ -Wall --std=c++2a main.cpp
+
+FILE="a.out"
+
+if [ -f "$FILE" ]; then
+  ./a.out && rm a.out
+fi
