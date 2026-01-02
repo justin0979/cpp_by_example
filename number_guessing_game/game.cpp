@@ -13,4 +13,23 @@ namespace game
     in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     return {};
   }
+
+  void guess_fixed_number_with_clues(unsigned number,
+      std::function<std::string(int,int)> message)
+  {
+    std::cout << "Guess the number.\n";
+    std::optional<int> guess;
+    while ((guess = read_number(std::cin)))
+    {
+      if (guess.value() == number)
+      {
+        std::cout << "You guessed it." << std::endl;;
+        return;
+      }
+      std::cout << message(number, guess.value());
+      std::cout << '>';
+    }
+    std::cout << std::format("The number to guess is {}\n", number);
+  }
+
 }
