@@ -1,6 +1,6 @@
 #!/bin/bash
 
-g++ -Wall --std=c++2a main.cpp
+g++ -Wall --std=c++2a main.cpp game.cpp
 
 FILE="a.out"
 
