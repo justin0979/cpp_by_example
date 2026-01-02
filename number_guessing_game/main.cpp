@@ -8,8 +8,8 @@ auto main(int argc, char** argv) -> int
 {
   std::function<std::string(int, int)> guess_message = [](int number, int guess)
   {
-    return std::format("Guess is too {}", (guess < number ? "low" : "high"));
+    return std::format("Guess of {} is too {}", guess, (guess < number ? "low" : "high"));
   };
 
-  std::cout << "Working" << std::endl;
+  game::guess_fixed_number_with_clues(42, guess_message);
 }
