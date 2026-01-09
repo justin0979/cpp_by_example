@@ -14,7 +14,7 @@ namespace game
     return {};
   }
 
-  void guess_fixed_number_with_clues(unsigned number,
+  void guess_fixed_number_with_clues(int number,
       std::function<std::string(int,int)> message)
   {
     std::cout << "Guess the number.\n";
