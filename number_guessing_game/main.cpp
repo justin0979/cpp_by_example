@@ -11,5 +11,5 @@ auto main(int argc, char** argv) -> int
     return std::format("Guess of {} is too {}", guess, (guess < number ? "low" : "high"));
   };
 
-  game::guess_fixed_number_with_clues(42, guess_message);
+  game::guess_number_or_give_up(42, guess_message);
 }

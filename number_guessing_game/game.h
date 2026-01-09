@@ -8,5 +8,5 @@
 namespace game
 {
   std::optional<int> read_number(std::istream&);
-  void guess_fixed_number_with_clues(int, std::function<std::string(int,int)>);
+  void guess_number_or_give_up(int, std::function<std::string(int,int)>);
 }

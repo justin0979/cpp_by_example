@@ -14,7 +14,7 @@ namespace game
     return {};
   }
 
-  void guess_fixed_number_with_clues(int number,
+  void guess_number_or_give_up(int number,
       std::function<std::string(int,int)> message)
   {
     std::cout << "Guess the number.\n";
